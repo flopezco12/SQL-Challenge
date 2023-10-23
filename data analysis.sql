@@ -42,7 +42,7 @@ SELECT e.emp_no, e.last_name, e.first_name, d.dept_name
 FROM employees AS e
 INNER JOIN current_dept_emp AS cde
 ON e.emp_no = cde.emp_no
-inner join departments AS d
+INNER JOIN departments AS d
 ON cde.dept_no = d.dept_no
 WHERE LOWER(d.dept_name) = 'sales';
 
